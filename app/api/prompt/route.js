@@ -7,7 +7,7 @@ export const GET = async (request) => {
     return new Response(JSON.stringify(prompts), { status: 200 });
   } catch (error) {
     return new Response(
-      "Failed to fetch all Prompts & ",
+      "Failed to fetch all Prompts from data base & ",
       JSON.stringify(error),
       { status: 500 }
     );
